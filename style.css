@@ -1,0 +1,486 @@
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+.navbar img {
+    width: 60px;
+    margin-right: -5px;
+}
+
+.navbar ul {
+    margin-left: 100px;
+}
+
+
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+.jumbotron p {
+    font-size: 16px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    margin-top: 5px;
+}
+
+
+/* Service */
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 30px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p {
+    font-size: 16px;
+    color: #ACACAC;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+/* Pricing */
+.pricing {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background: linear-gradient(-45deg, #f403d1, #64b5f6);
+    padding: 30px;
+}
+
+.pricing img {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.pricing h4 {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.pricing p {
+    font-size: 20px;
+    color: white;
+    margin-top: -5px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.pricing h2 {
+    font-size: 65px;
+    font-family: Viga;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.pKiri,
+.pKanan {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 1s;
+}
+
+.pKanan {
+    transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+/* Work Space */
+.workingspace {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.workingspace h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.workingspace h3 span {
+    font-weight: 500;
+}
+
+.workingspace p {
+    font-size: 18px;
+    color: #ACACAC;
+    font-weight: 200;
+    margin: 5px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+
+/* progress bar */
+
+.main {
+    margin: 5px auto;
+    width: 100%;
+}
+
+.progressBar {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: #eeeeee;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #222;
+}
+
+.title {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    padding-left: 10px;
+    float: left;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+    z-index: 10000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 2px 0 2px #333;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.progress_value {
+    position: relative;
+    float: right;
+    padding-right: 10px;
+    line-height: 1;
+    font-weight: bold;
+    color: #455a64;
+    z-index: 10000;
+}
+
+.progress {
+    height: 20px;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 2px 0 2px #555;
+}
+
+.htmlColor {
+    background: #1877f3;
+}
+
+.cssColor {
+    background: #c01edd;
+}
+
+.jsColor {
+    background: #e9820c;
+}
+
+.phpColor {
+    background: #1b5e20;
+}
+
+.ajaxColor {
+    background: #ff6f00;
+}
+
+.html {
+    background: #1861c2;
+}
+
+.css {
+    background: #ab47bc;
+}
+
+.js {
+    background: #ce750f;
+}
+
+.php {
+    background: #66bb6a;
+}
+
+.ajax {
+    background: #ffca28;
+}
+
+@media (max-width: 720px) {
+    .main {
+        width: 90%;
+    }
+}
+
+/* testimonial */
+.testimonial {
+    margin-top: 70px;
+}
+
+.testimonial h5 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.testimonial figure img {
+    width: 60px;
+    margin: 20px 10px 10px;
+    opacity: 0.6;
+}
+
+.testimonial figure img.utama {
+    width: 90px;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+.testimonial figure h5 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #1C2C5D;
+}
+
+.testimonial figure p {
+    font-size: 12px;
+    color: #ACACAC;
+    margin-top: -5px !important;
+}
+
+.testimonial figcaption {
+    text-align: center;
+}
+
+.testimonial h3 {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* footer */
+.footer {
+    margin-top: 100px;
+}
+
+.footer p {
+    margin-top: 10px;
+    color: #ACACAC;
+    font-size: 18px;
+}
+
+.footer ul {
+    margin-top: -50px;
+}
+
+/* project */
+.project h3 {
+    font-family: Viga;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+.project p {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+
+/* client */
+.client {
+    background-image: url(img/client.jpg);
+    background-size: cover;
+    height: 250px;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
+    margin-top: 90px;
+    margin-left: -120px;
+    margin-right: -120px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.client h3 {
+    font-family: Viga;
+    font-size: 32px;
+    color: white;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.client img {
+
+    margin: 20px 10px 10px;
+
+}
+
+.contact h2 {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* why choose us */
+.choose h2 {
+    font-family: Viga;
+    font-size: 32px;
+    color: black;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+.choose h3 {
+    font-family: Viga;
+    color: rgb(65, 65, 65);
+}
+
+.choose p {
+    font-size: 15px;
+    color: #ACACAC;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+/* blog-sidebar */
+.blog-sidebar h4 {
+    font-family: Viga;
+    font-size: 20px;
+    color: black;
+}
+
+.blog-sidebar p {
+    font-size: 15px;
+    color: white;
+}
+
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 20px;
+
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .px-2 {
+        margin-left: -30px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+
+    .workingspace {
+        text-align: left;
+    }
+
+    .testimonial h5 {
+        font-size: 24px;
+    }
+
+    .client img {
+        width: 120px;
+        margin: 20px 10px 10px;
+
+    }
+
+}
